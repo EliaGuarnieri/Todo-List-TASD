@@ -9,7 +9,7 @@ function Heading (props) {
   if (props.filter === 'Tutti' || props.filter === 'Attivi') {
     if (active > 1) {
       return (
-        <h3>{`Ci sono ${active} da completare`}</h3>
+        <h3>{`Ci sono ${active} attività da completare`}</h3>
       )
     } else if (active === 1) {
       return (
@@ -31,11 +31,11 @@ function Heading (props) {
       )
     } else if (completed > 1) {
       return (
-        <h3>{`${completed} sono state completate`}</h3>
+        <h3>{`${completed} attività sono state completate`}</h3>
       )
     } else if (completed === 1) {
       return (
-        <h3>{`${completed} è stata completata`}</h3>
+        <h3>{`${completed} attività è stata completata`}</h3>
       )
     } else {
       return (
