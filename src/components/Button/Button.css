@@ -1,7 +1,6 @@
 .button {
   appearance: none;
   color: #FFFFFF;
-  border: 2px solid #1A1A1A;
   border-radius: 15px;
   box-sizing: border-box;
   cursor: pointer;
@@ -27,6 +26,7 @@
 
 .button.default {
   background-color: #000000;
+  border: 2px solid #1A1A1A;
 }
 
 .button.default:hover {
@@ -35,13 +35,15 @@
 }
 
 .button.outlined {
-  color: #1A1A1A;
+  color: #fff;
   background-color: transparent;
+  border: 2px solid #fff;
 }
 
 .button.outlined:hover {
   color: #fff;
   background-color: #1A1A1A;
+  border: 2px solid #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
